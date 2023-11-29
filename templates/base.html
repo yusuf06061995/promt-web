@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+    <title>NioLand - Homepage Project Management</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+    {% include 'navbar.html' %}
+   
+    
+    {% block content %}  {% endblock %}
+
+    {% include 'footer.html' %}
+    
+    <script src="{% static 'assets/js/bundle.js' %}"></script>
+    <script src="{% static 'assets/js/scripts.js' %}"></script>
+
+</html>
