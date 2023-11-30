@@ -1,6 +1,16 @@
-{% extends 'base.html' %}
-{% block content %}
+
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>NioLand - Sign Up</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
 <body class="nk-body" data-navbar-collapse="xl">
     <div class="nk-app-root ">
       
@@ -18,8 +28,8 @@
                                     <p class="nk-block-text lead ">We are very sorry for inconvenience. It looks like
                                         you’re try to access a page that either has been deleted or never existed.</p>
                                     <ul class="nk-btn-group pt-4 justify-content-center pt-3 pt-md-5 pb-2">
-                                        <li><a href="index.html" class="btn btn-primary"> Go Back Home </a></li>
-                                        <li><a href="index.html" class="btn btn-outline-primary"> Try Again </a></li>
+                                        <li><a href="{% url 'home' %}" class="btn btn-primary"> Go Back Home </a></li>
+                                        <li><a href="{% url 'home' %}" class="btn btn-outline-primary"> Try Again </a></li>
                                     </ul>
                                     <hr class="mt-md-6">
                                 </div>
@@ -42,6 +52,9 @@
             </ul>
         </div>
     </div>
+    <script src="{% static 'assets/js/bundle.js' %}"></script>
+    <script src="{% static 'assets/js/scripts.js' %}"></script>
    
 </body>
-{% endblock %}
+
+</html>

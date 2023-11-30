@@ -23,7 +23,13 @@ def testimonial(request):
 def team(request):
     return  render(request,'team.html')
 
-def page_404(request):
+
+def page_not_found(request, exception):
     return render(request, 'page-404.html')
+
+
+def under_maintenance(request):
+    return render(request,'under-maintenance.html')
+    
 
 

@@ -9,7 +9,7 @@ urlpatterns = [
     path('support',support,name='support'),
     path('testimonial',testimonial,name='testimonial'),
     path('team',team,name='team'),
-    path('page-404',page_404,name='page-404')
-
+   
 
 ]
+
