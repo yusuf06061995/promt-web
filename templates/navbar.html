@@ -3,9 +3,9 @@
     <div class="nk-header-main nk-navbar-main has-separate shadow-xl">
         <div class="container">
             <div class="nk-header-wrap">
-                <div class="nk-header-logo"><a href="index.html" class="logo-link">
-                        <div class="logo-wrap"><img class="logo-img" style="height:40px" src="{% static 'images/logo-s1-dark.png' %}"
-                                srcset="{% static 'images/logo-s1-dark2x.png' %}" alt="brand-logo"></div>
+                <div class="nk-header-logo"><a href="{% url 'home' %}" class="logo-link">
+                        <div class="logo-wrap"><img class="logo-img" style="height:30px" src="{% static 'images/logo-s1-dark.png' %}"
+                                srcset="{% static 'images/logo-s1-dark2x.png' %}" style="height:30px" alt="brand-logo"></div>
                     </a></div>
                 <nav class="nk-header-menu nk-navbar">
                     <div>
@@ -16,6 +16,14 @@
                           
                             <li class="nk-nav-item"><a href="{% url 'support' %}" class="nk-nav-link"><span
                                         class="nk-nav-text">Contact</span></a></li>
+                            <li class="nk-nav-item"><a href="{% url 'support' %}" class="nk-nav-link"><span
+                                            class="nk-nav-text">Query</span></a></li>   
+                            <li class="nk-nav-item"><a href="{% url 'team' %}" class="nk-nav-link"><span
+                                                class="nk-nav-text">Team</span></a></li>  
+                            <li class="nk-nav-item"><a href="{% url 'support' %}" class="nk-nav-link"><span
+                                                    class="nk-nav-text">Testimonial</span></a></li>  
+                            <li class="nk-nav-item"><a href="{% url 'support' %}" class="nk-nav-link"><span
+                                                        class="nk-nav-text">Home</span></a></li>                                                                  
                            
                         </ul>
                        
@@ -25,7 +33,7 @@
                     <ul class="nk-btn-group sm justify-content-center">
                         
                         <li class="nk-navbar-toggle "><button
-                                class="btn btn-outline-dark navbar-toggle rounded-0 h-100 p-2"><em
+                                class="btn btn-outline-primary navbar-toggle rounded-0 h-100 p-2 border-0"><em
                                     class="icon ni ni-menu"></em></button></li>
                     </ul>
                 </div>
