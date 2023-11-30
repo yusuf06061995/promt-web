@@ -23,4 +23,7 @@ def testimonial(request):
 def team(request):
     return  render(request,'team.html')
 
+def page_404(request):
+    return render(request, 'page-404.html')
+
 
